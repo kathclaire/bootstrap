@@ -29,11 +29,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <a href="#reserveForm">
-                    <div class="col-4 col-md-4 col-xl-2 mt-4 text-nowrap">
-                        <button class="btn btn-info btn-lg">Reserve Campsite</button>
-                    </div>
-                </a>
+                <div class="col-4 col-md-4 col-xl-2 mt-4 text-nowrap">
+                    <a href="#reserveForm" role="button" class="btn btn-info btn-lg" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at  <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
@@ -137,7 +135,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary">Search</button>
+                                    <button type="submit" class="btn btn-primary" id="button">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -152,11 +150,11 @@
             <div class="row">
                 <div class="col-4 col-sm-2 offest-1">
                     <h5>Links</h5>
-                   <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="#">Sites</a></li>
-                            <li><a href="contactus.html">Contact</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
@@ -184,6 +182,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 </body>
 
 </html>
