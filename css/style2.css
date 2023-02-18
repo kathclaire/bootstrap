@@ -62,10 +62,3 @@ header h2 {
     filter: grayscale(100%) brightness(.6);
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel {
-    border: solid #5637DD;
-}
